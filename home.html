@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbershop Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav>
+    <div class="logo">
+      <img src="Website Assets/Website Assets/Brand Logo/Brand Logo-01.png">
+    </div>
+    <ul class="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#book">Book</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  <div class="animaton start-home">
+
+  </div>
+  </nav>
+
+  <section id="home">
+    <div class="container">
+      <!-- Slideshow images go here -->
+        <img src="Website Assets/Website Assets/Pattern Background/Pattern Background.png" class="pattern">
+        <div >
+            <span class="book" ><h1>BOOK APPOINTMENT</h1></span>
+            <form id="appointment-form">
+              <label>Name</label>
+              <input type="text" id="name" placeholder="Name" required><br>
+              <label>Email</label>
+              <input type="email" id="email" placeholder="Email" required><br>
+              <label>Date</label>
+              <input type="date" id="date" required> <br>
+              <label> Time</label>
+              <input type="time" id="time" required><br>
+              <label id="select-barber">Select barber</label>
+              <select id="barber" required>
+                <option value="" disabled selected>Select Barber</option>
+                <option value="barber1">Dee</option>
+                <option value="barber2">Barber 2</option>
+                <option value="barber3">Barber 3</option>
+              </select> <br>
+              <button type="submit" id="book-btn">Book</button>
+            </form>
+        </div>
+        <div class="foot">
+          <img src="Website Assets/Website Assets/Brand Logo/Brand Logo-02.png">
+        </div>
+    </div>
+
+  </section>
+
+  <section id="book" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Book Appointment</h2>
+      
+    </div>
+  </section>
+
+  <section id="About Us">
+    <h2>About Us</h2>
+   
+  </section>
+
+  <section id="contact" class="contact-details">
+    <h2>Contact Us</h2>
+    <div class="map">
+      <!-- Map goes here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.415241091931!2d26.527501474588096!3d-33.307958090227174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e645dc5c0b3afaf%3A0x91433af4e196454e!2s13%20High%20St%2C%20Grahamstown%2C%20Makhanda%2C%206139!5e0!3m2!1sen!2sza!4v1710354873383!5m2!1sen!2sza" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-info">
+      <p>Address: 13 High Street, Grahamstown, 6139</p>
+      <p>Phone: Your Phone Number Goes Here</p>
+      <p>Email: Your Email Address Goes Here</p>
+    </div>
+    <div class="social">
+      <!-- Social network links go here -->
+      <a href="#"><img src="facebook.png"></a>
+      <a href="#"><img src="twitter.png"></a>
+      <a href="#"><img src="instagram.png"></a>
+    </div>
+  </secti
+  on>
+
+  <script src="script.js"></script>
+</body>
+</html>
