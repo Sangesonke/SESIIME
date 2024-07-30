@@ -11,8 +11,10 @@
 }
 
 .logo img {
-  height: 50px; 
+  height: 120px; 
   width: auto;
+  padding-bottom: 0%;
+  margin-bottom:-10px;
 
 }
 nav {
@@ -41,7 +43,7 @@ nav ul li a {
   right: 0;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 30px;
   color: rgb(216, 185, 10);
   z-index: 1;
   position: relative;
@@ -63,33 +65,6 @@ nav .animation{
   border-radius: 8px;
 }
 
-nav .start-home,a:nth-child(1):hover~.animation{
-  
-  left: 0;
-  
-}
-a:nth-child(1){
-  
-  
-}
-a:nth-child(2){
-  width: 100px;
-  
-}
-nav .start-home,a:nth-child(2):hover~.animation{
-  width: 100px;
-  left: 100px;
-  
-}
-a:nth-child(3){
-  width: 160px;
-  
-}
-nav .start-home,a:nth-child(3):hover~.animation{
-  width: 100px;
-  left: 210px;
-  
-} 
 #book-btn{
   background-color: #fcb708;
   width: 130px;
@@ -106,20 +81,118 @@ nav .start-home,a:nth-child(3):hover~.animation{
     top: 29%;
     position: static;
 }
-/* a:nth-child(4){
-  width: 120px;
-  
-}
-nav .start-home,a:nth-child(4):hover~.animation{
-  width: 160px;
-  left: 310px;
+
+/*MEET THE BARBERS SECTION*/
+
+
+.team-title {
+  text-align: center; 
+  font-weight: bold;
+  font-size: large; 
+  color: rgb(216, 185, 10);
   
 }
 
-
-.slideshow {
+:root {
+  --index: calc(1vw + 1vh);
+  --transition: cubic-bezier(0.1,0.7,0,1);
 }
-  /* Styling for slideshow */
+
+.items{
+  display: flex;
+  gap: 0.4rem ;
+  perspective: calc(var(--index)*35);
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+}
+
+.item{
+  width:calc(var(--index)*3);
+  height: calc(var(--index)*12);
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  filter: grayscale(1) brightness(0.5);
+  transition:transform 1.25s var(--transition), filter 3s var(--transition), 
+    width 1.25s var(--transition);
+  will-change: transform, filter,rotateY,width;
+}
+
+.item::before,.item::after{
+  content: "";
+  position: absolute;
+  height:100%;
+  width: 20px;
+  right: calc(var(--index)* -1);
+
+}
+
+.item::after{
+  left: calc(var(--index) * -1);
+}
+
+.items .item:hover {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)*10));
+
+}
+
+.items .item:hover + *{
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 8.5)) rotateY(35deg);
+  z-index: -1;
+
+}
+
+.items .item:hover + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 5.6)) rotateY(40deg);
+  z-index: -2;
+}
+
+.items .item:hover + * + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 2.5)) rotateY(30deg);
+  z-index: -3;
+
+}
+.items .item:hover + * + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 0.6)) rotateY(15deg);
+  z-index: -4;
+
+}
+.items .item:has( + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 8.5)) rotateY(-35deg);
+}
+
+.items .item:has( + * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 5.6)) rotateY(-40deg);
+}
+.items .item:has( + * + * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 2.5)) rotateY(-30deg);
+}
+.items .item:has( + * + * + * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index)* 0.6)) rotateY(-15deg);
+}
+
+.items .item:active,
+.items .item:focus{
+  width:28vw;
+  filter:inherit;
+  z-index: 100;
+  transform: translateZ(calc(var(--index) * 10));
+  margin: 0 0.45vw;
+
+}/*Meeet the team section ends here*/
 
 
 .brand-info {
@@ -230,21 +303,8 @@ label {
   cursor: pointer;
 }
 
-.pricing-slideshow {
-  /* Styling for pricing slideshow */
-}
 
-.map {
-  /* Styling for map */
-}
 
-.contact-info {
-  /* Styling for contact information */
-}
-#contact{
-  display: inline;
-
-}
 
 .social {
     position:absolute;
@@ -294,22 +354,7 @@ p{
   font-size: 4em;
   color: rgb(189, 189, 11);
 }
-/* 
-@keyframes animate{
-  0%,100%{
-      background-image:url(fade.jpg); 
-  
-  }
-  33%{
-      background-image:url(buzz.jpg); 
-  
-  }
-  66%{
-      background-image:url(fade2.jpg); 
-  
-  }
- 
-} */
+
 
 .slide {
   width: 100%;
@@ -326,3 +371,17 @@ html{
   scroll-behavior: smooth;
 }
 
+#image-container img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#image-container imgfirst-child {
+  opacity: 1;
+}
+
+
+#contact{
+  margin-bottom: 50px;
+}

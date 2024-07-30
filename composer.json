@@ -1,0 +1,17 @@
+{
+    "name": "zandile/sesime",
+    "autoload": {
+        "psr-4": {
+            "Zandile\\Sesime\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sangesonke",
+            "email": "61013691+Sangesonke@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.0"
+    }
+}

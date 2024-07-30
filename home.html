@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbershop Website</title>
+  <title>Deez Cuts</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,31 +15,47 @@
     <ul class="links">
       <li><a href="#home">Home</a></li>
       <li><a href="#book">Book</a></li>
+      <!-- <li><a href="#services">Services</a></li> --> <!--This sections is in case we have a services section -->
       <li><a href="#about">About Us</a></li>
       <li><a href="#contact">Contact Us</a></li>
     </ul>
-  <div class="animaton start-home">
+  <!-- <div class="animaton start-home">
+
+  </div> -->
+  </nav>
+  <div class="team">
+   <div class="team-title">MEET
+    OUR
+    BARBERS  
+  </div> 
+
+    <div class="items">
+      <div class="item" tabindex="0" style="background-image: url(images/cut1.jpeg);"></div>
+      <div class="item" tabindex="0" style="background-image: url(cut2.jpeg);"></div>
+      <div class="item" tabindex="0" style="background-image: url(cut3.jpeg);"></div>
+      <div class="item" tabindex="0" style="background-image: url(cut4.jpeg);"></div>
+      <div class="item" tabindex="0" style="background-image: url(cut5.jpeg);"></div>
+
+    </div>
 
   </div>
-  </nav>
-
   <section id="home">
     <div class="container">
-      <!-- Slideshow images go here -->
+
         <img src="Website Assets/Website Assets/Pattern Background/Pattern Background.png" class="pattern">
         <div >
             <span class="book" ><h1>BOOK APPOINTMENT</h1></span>
-            <form id="appointment-form">
+            <form id="appointment-form" action="form.php" method="post">
               <label>Name</label>
-              <input type="text" id="name" placeholder="Name" required><br>
-              <label>Email</label>
-              <input type="email" id="email" placeholder="Email" required><br>
+              <input type="text" id="name" name="name" placeholder="Name" required><br>
+              <label>Number</label>
+              <input type="number" id="number" name="number" placeholder="Phone Number" required><br>
               <label>Date</label>
-              <input type="date" id="date" required> <br>
+              <input type="date" id="date" name="date" required> <br>
               <label> Time</label>
-              <input type="time" id="time" required><br>
+              <input type="time" id="time" name="time" required><br>
               <label id="select-barber">Select barber</label>
-              <select id="barber" required>
+              <select id="barber" name="barber" required>
                 <option value="" disabled selected>Select Barber</option>
                 <option value="barber1">Dee</option>
                 <option value="barber2">Barber 2</option>
@@ -63,9 +79,13 @@
     </div>
   </section>
 
-  <section id="About Us">
+  <section id="about">
     <h2>About Us</h2>
-   
+    <!-- <div id="image-container">
+      <img src="cut1.jpeg" style="max-width: 30%; max-height: 30%;" alt="Image 1">
+      <img src="cut2.jpeg" style="max-width: 30%; max-height: 30%;" alt="Image 2">
+      <img src="cut3.jpeg" style="max-width: 30%; max-height: 30%;" alt="Image 3">
+    </div> -->
   </section>
 
   <section id="contact" class="contact-details">
@@ -76,8 +96,8 @@
     </div>
     <div class="contact-info">
       <p>Address: 13 High Street, Grahamstown, 6139</p>
-      <p>Phone: Your Phone Number Goes Here</p>
-      <p>Email: Your Email Address Goes Here</p>
+      <p>Phone: 0630293873</p>
+      <p>Email: yorkd8827@gmail.com</p>
     </div>
     <div class="social">
       <!-- Social network links go here -->

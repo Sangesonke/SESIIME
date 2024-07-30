@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesiime Barbershop</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        function validateForm() {
+            var bookingTime = document.getElementById('booking-time').value;
+            var currentTime = new Date(); // Get the current date and time
+            
+            // Set the current time as the start time
+            var startTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(),  currentTime.getHours(), currentTime.getMinutes());
+            
+            var endTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 17, 0); // 5:00 PM
+            
+            var parsedTime = new Date("2000-01-01T" + bookingTime); // Create a dummy date to parse time
+
+            if (parsedTime < startTime || parsedTime > endTime) {
+                alert('Hey now,Booking time must be between current time and 5:00 PM.');
+                return false;
+            }
+                return true;
+           
+
+        }
+
+        
+        document.getElementById("bookingForm").onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var formData = new FormData(this);
+
+            fetch('submit_form.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.success) {
+                    window.location.href = 'sample.html'; // Redirect to your desired page
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form.');
+            });
+        };
+
+    </script>
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+       
+            
+            <nav>
+                <img src="Website Assets/Website Assets/Brand Logo/Brand Logo-01.png" alt="Sesiime Logo">
+       
+                <a href="#hero" >Home</a>
+                <a href="#team">Meet the team</a>
+                <a href="#booking">Book</a>
+                <a href="#about">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1><img src="WEB ELEMENTS/section 1/main logo-8.png" alt="Sesiime Logo"></h1>
+            
+          
+        </div>
+    </section>
+    
+    <section class="team" id="team">
+        <div class="team-title">MEET OUR BARBERS</div> 
+        <div class="items">
+            <div class="item" tabindex="0" style="background-image: url(barber5.jpeg );">
+                <div class="overlay">
+                    <div class="text">Mr Dee </div>
+                </div>
+            </div>
+            <div class="item" tabindex="0" style="background-image: url(barber2.jpeg);">
+                <div class="overlay">
+                    <div class="text">Xhosa Man</div>
+                </div>
+            </div>
+            <div class="item" tabindex="0" style="background-image: url(barber3.jpeg);">
+                <div class="overlay">
+                    <div class="text">Dube</div>
+                </div>
+            </div>
+            <div class="item" tabindex="0" style="background-image: url(barber4.jpeg);">
+                <div class="overlay">
+                    <div class="text">Khapture</div>
+                </div>
+            </div>
+            <div class="item" tabindex="0" style="background-image: url(barber1.jpeg);">
+                <div class="overlay">
+                    <div class="text">Simon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="booking" class="contact">
+    
+        <div class="container">
+            <h2 class="contact-title">Book Appointment</h2>
+            <form id="contact-form" action="Sesime.php" method="post" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="barber">Barber</label>
+                    <select id="barber" name="barber">
+                        <option value="Mr_Dee">Mr Dee</option>
+                        <option value="xhosa_man">Xhosa man</option>
+                        <option value="dube">Dube</option>
+                        <option value="Khapture">Khapture</option>
+                        <option value="Simon">Simon</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    
+                    <label for="time"> Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group button-group">
+                <button class="sub" type="submit">Book</button>
+            </div>
+            </form>
+        </div>
+
+    </section>
+   
+    <section id="about" class="about">
+        <div class="img-overlay">
+
+        
+            <div class="about-container">
+                <img src="WEB ELEMENTS/section 2/slideshow image-8.png" alt="hairclip picture"> 
+                
+                <div class="overlay-text">
+                    <h1> ABOUT SESIME</h1>
+                    <p >At SESIME Barbershop, we excel in delivering top-notch classic cuts, precise beard trims, 
+                        and premium grooming products. Our skilled and savvy barbers are dedicated to helping you
+                         achieve your best look. We blend timeless techniques with a contemporary edge, creating 
+                         a vibe that’s both nostalgic and current. Our space pulses with great music, engaging 
+                         conversations, and a sense of community. 
+                        We’ve crafted a relaxed atmosphere perfect for your routine self-care.</p>
+                    </div>
+                
+            </div>
+            
+  
+      
+
+        </div>
+       
+    </section>
+
+
+ 
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sesiime Barbershop. All Rights Reserved.</p>
+            <div class="social">
+                <!-- Social network links go here -->
+                <a href="https://www.facebook.com/sesiime/"><img src="WEB ELEMENTS/section 4/icons/fb icon-8.png"></a>
+                <a href="#"><img src="WEB ELEMENTS/section 4/icons/x icon-8.png"></a>
+                <a href="https://www.instagram.com/sesiime/"><img src="WEB ELEMENTS/section 4/icons/ig icon-8.png"></a>
+              </div>
+        </div>
+    </footer>
+</body>
+</html>

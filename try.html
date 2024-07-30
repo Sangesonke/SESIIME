@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    input,
+    select {
+        width: calc(100% - 120px);
+        padding: 5px;
+    }
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    #booking {
+        position: relative;
+    }
+    #logo {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 50px;
+        height: 40px;
+    }
+</style>
+</head>
+<body>
+
+<section id="booking" class="contact">
+    <div class="container">
+        <h2>Book Appointment</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="barber">Barber</label>
+                <select id="barber" name="barber">
+                    <option value="john1">John Doe</option>
+                    <option value="john2">John Doe</option>
+                    <option value="john3">John Doe</option>
+                    <option value="john4">John Doe</option>
+                    <option value="john5">John Doe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit">Book</button>
+        </form>
+        <img id="logo" src="your_logo.png" alt="Logo">
+    </div>
+</section>
+
+</body>
+</html>
