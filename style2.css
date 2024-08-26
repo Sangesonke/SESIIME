@@ -1,433 +1,477 @@
-        @font-face {
-            font-family: 'MyCustomFont';
-            src: url('fonts/Poppins-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'MyCustomFont';
-            src: url('fonts/Poppins-Bold.ttf') format('truetype');
-            font-weight: bold;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'MyCustomFont';
-            src: url('fonts/Poppins-Light.ttf') format('truetype');
-            font-weight: light;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            src: url('fonts/Poppins-Italic.ttf') format('truetype');
-            font-weight: italic;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Poppins';
-            src: url('fonts/Poppins-ExtraBold.ttf') format('truetype');
-            font-weight: bolder;
-            font-style: normal;
-        }
 
 
-        
-        body, h1, h2, h3, p, form, input, textarea, button {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'MyCustomfont', sans-serif; 
-          
-        }
-        *{
-          scroll-behavior: smooth;
-        }
-        h2,h3,p{
-         font-family: 'MyCustomfont',sans-serif;
-         
-        }
-        p{
-          font-size: 16px;
-        }
-      
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Website Assets/Website Assets/Fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        body {
-            line-height: 1.6;
-            
-            
-        }
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Website Assets/Website Assets/Fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
-       #booking h2 {
-            color: #f5ab00;
-         }
-        
-        .about{
-          width:100%;  
-          height: 100%; 
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Website Assets/Website Assets/Fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
 
-        }
+@font-face {
+    font-family: 'Poppins';
+    src: url('Website Assets/Website Assets/Fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: italic;
+    font-style: normal;
+}
 
-        header {
-           
-            color: rgb(255, 214, 9);            
-            display: inline;
-        }
+@font-face {
+    font-family: 'Poppins';
+    src: url('Website Assets/Website Assets/Fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
 
-        header img {
-            width: 200px;
-            margin-right: auto;
-            
-        }
+body, h1, h2, h3, p, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MyCustomFont', sans-serif;
+}
 
-        nav{
-          display: flex;
-          justify-content: flex-end;
-          padding: 5px 30px;
-          height: -10px;
-          transition: transform 0.3s ease-in-out;
-          
-        
-        }
+* {
+    scroll-behavior: smooth;
+}
 
-        nav a {
-          color: #ccac00;
-          text-decoration: none;
+h2, h3, p {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+p {
+    font-size: 2vw;
+}
+
+body {
+    line-height: 1.6;
+}
+
+#booking{
+    margin-top: -10px;
+}
+#booking h2 {
+    color: #f5ab00;
+    padding-top: 2vw;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    
+}
+
+header {
+    color: rgb(255, 214, 9);
+    display: inline;
+}
+
+header img {
+    width: 15vw; /* Scale image with viewport width */
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.4vw 2vw; /* Use viewport width for padding */
+    height: -10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a {
+    color: #ccac00;
+    text-decoration: none;
           margin-left: 30px;
           font-size: 25px;
           margin-top: 30px;
 
             
-        }
-            
-        .hero {
-            background: url('WEB ELEMENTS/section 1/overlayed wall image-8.png') no-repeat center center/cover;
-            padding: 50px 20px;
-            color: white;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+}
 
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: black;
-        }
+.hero {
+    background: url('WEB ELEMENTS/section 1/overlayed wall image-8.png') no-repeat center center/cover;
+    padding: 4vw 2vw; /* Use viewport units for padding */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
+.hero h1 {
 
-        .hero .btn {
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: white;
-            background-color: #ffd700;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+    color: black;
+}
 
-        .hero .btn:hover {
-            background-color: #ccac00;
-        }
+.hero p {
+    font-size: 2.5vw; /* Scale paragraph with viewport width */
+    margin-bottom: 4vw;
+}
 
-        section {
-            margin: 0;
-            padding: 0;
-        }
-        .contact{
-         
-          color: black;
-        }
+.hero .btn {
+    padding: 1.5vw 3vw; /* Scale button padding with viewport width */
+    font-size: 2vw;
+    color: white;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 0.5vw; /* Use viewport units for border-radius */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
 
-        .about, .services, .gallery,.contact-title {
-            text-align: center;
-            
-        }
+.hero .btn:hover {
+    background-color: #ccac00;
+}
 
-        
-        
-        .team{
-          padding: 50px 0px;
-          position: relative;
-          background: url('WEB ELEMENTS/section 3/overlayed\ chairs\ image-8.png') no-repeat center center/cover;
-          color: white;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          
+section {
+    margin: 0;
+    padding: 0;
+}
 
-        }
+.contact {
+    color: black;
+}
 
-        .team::before{
-          content: "";
-          position: relative;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background-color: rgba(0, 0, 0, 0.9); 
-          z-index: 1;
-        }
+.about, .services, .gallery, .contact-title {
+    text-align: center;
+}
 
-      section{
-        margin-top: 0;
-      }
-        .team-title {
-            text-align: center; 
-            font-weight: bold;
-            font-size: 30px; 
-      
-            color:#f5ab00 ;
-            
-          }
-          .img-overlay {
-            position: relative;
-            width: 100%;
-            height: auto;
-        }
-          .img-overlay img{
-            width: 100%;
-            height: 80%;
-            height: auto;
-            display: block;
+.team {
+    padding: 4vw 0;
+    position: relative;
+    background: url('WEB ELEMENTS/section 3/overlayed\ chairs\ image-8.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
-          }
-          .overlay-text {
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #f5ab00;
-            
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 80%; /* Adjust width as needed */
-        }
-        
-          .team-title,.items{
-              
-              position: relative;
-              z-index: 2; 
+.team::before {
+    content: "";
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.team-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+    color: #f5ab00;
+}
+
+.img-overlay {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5ab00;
+    padding: 4vw;
+    border-radius: 2vw;
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+}
+
+.team-title, .items {
+    position: relative;
+    z-index: 2;
+}
+/*Booking form*/
+
+#booking + section {
+    margin-top: 0; /* Remove top margin of the next section */
+    padding-top: 0; /* Remove top padding of the next section */
+}
+
+.contact-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+    color: #f5ab00;
+}
+
+#booking .container {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: max-content;
+    background-image: url('WEB ELEMENTS/section 4/icons\ and\ shape-8.png');
+    background-size: cover;
+    padding-bottom: 0.1px;
+}
+
+label {
+    margin-right: 10vw;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+label[for="barber"]{
+    margin-right: 9vw;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+label[for="time"],label[for="date"]{
+    margin-right: 10.5vw;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 1vw;
+    color: #f5ab00;
+
+}
+
+
+.form-group input, .form-group select {
+    width: 50vw;
+    padding: 2vw;
+    border: 1px solid #ddd;
+    border-radius: 1vw;
+    font-size: 14px;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #ffd700;
+    outline: none;
+}
+
+.button-group {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: auto; /* Let the button size itself based on content */
     
-          }
+    background-color: #f5ab00;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Switch from vw to px for a more consistent appearance */
+    font-size: 1.5em; /* Use em for font size to make it relative to the parent element */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    /* Additional padding for better sizing */
+    padding: 10px 20px;
+}
+button:hover {
+    background-color: #f5ab00;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 3vw 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 2vw;
+}
+
+.footer a:hover {
+    text-decoration: wavy;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(0.1,0.7,0,1);
+}
+
+.items {
+    display: flex;
+    gap: 0.4vw;
+    perspective: calc(var(--index) * 35);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: calc(var(--index) * 3);
+    height: calc(var(--index) * 12);
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.5);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+    position: relative;
+}
+
+.items .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1vw;
+    transition: 0.3s ease;
+}
+
+.text {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.item::before,
+.item::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2vw;
+    right: calc(var(--index) * -1);
+}
+
+.item::after {
+    left: calc(var(--index) * -1);
+}
+
+.items .item:hover {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+}
+
+.items .item:hover + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+
+.items .item:hover + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+
+.items .item:hover + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+
+.items .item:hover + * + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
+    z-index: -4;
+}
+
+.items .item:has(+ :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.items .item:has(+ * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has(+ * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has(+ * + * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
+}
+
+.items .items:active,.items .item:focus{
+    width:28vw;
+    filter: inherit;
+    z-index: 100;
+    transform: translateZ(calc(var(--index)*10));
+    margin: 0 0.45vw;
+}
 
 
-        #booking .container{
-          font-family: 'poppins',sans-serif;
-          width: 100%;
-          height: 60vh;
-          background-image: url('WEB ELEMENTS/section 4/icons\ and\ shape-8.png');
-        }
 
+.about-container img {
+    max-width: 100%;
+    height: auto;
+   
+}
 
+@media only screen and (max-width: 768px){
+
+    .hero .container h1 img{
+  
+        width:96vw;
         
-        label{
-          margin-right: 150px;
-          font-weight: bold;
+    }
 
-        }
-        .form-group {
-            
-            display: flex;
-            justify-content: center;
-            margin-bottom: 16px;
-        }
-
-        .form-group label {
-            display: block;
-            text-align: left;
-     
-            margin-bottom: 5px;
-            color: #f5ab00 ;
-        }
-
-        .form-group input, .form-group select, .form-group textarea {
-            width: 40%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            color: #333;
-            justify-content: center;
-            align-items: center;
-          }
-
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-            border-color: #ffd700;
-            outline: none;
-        }
-        
-        .button-group{
-        position: sticky;         
+    button {
+        font-size: 1.2em; /* Slightly smaller font size for mobile */
+        padding: 12px 18px; /* Adjust padding for smaller screens */
+        border-radius: 8px; /* Adjust border-radius for smaller screens */
+    }
+    .form-group input, .form-group select, .form-group textarea {
+        padding: 10px;
+        width: 60%;
+    }
+    nav a {
+        display: none;
+    }
+    .hero {
+        background: url('WEB ELEMENTS/section 1/overlayed wall image-8.png') no-repeat center center;
+        padding: 4vw 2vw; /* Use viewport units for padding */
+        color: white;
+        text-align: center;
         display: flex;
-        justify-content: center}
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
 
-        button {
-            width: 20%;
-            padding: 10px;
-            background-color: #ffd700;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #ccac00;
-        }
-
-        .form-group input#date {
-            background: url('WEB ELEMENTS/section 4/calander\ icon-8.png') no-repeat 10px right
-            ;
-            background-size: 20px 20px; /* Adjust size as needed */
-          }
-        .footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .footer p {
-            margin: 0;
-        }
-
-        .footer a {
-            color: #ffd700;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .footer a:hover {
-            text-decoration:wavy;
-        }
-
-        :root {
-            --index: calc(1vw + 1vh);
-            --transition: cubic-bezier(0.1,0.7,0,1);
-          }
-          
-          .items {
-            display: flex;
-            gap: 0.4rem;
-            perspective: calc(var(--index) * 35);
-            position: relative;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .item {
-            width: calc(var(--index) * 3);
-            height: calc(var(--index) * 12);
-            background-color: #222;
-            background-size: cover;
-            background-position: center;
-            cursor: pointer;
-            filter: grayscale(1) brightness(0.5);
-            transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
-            will-change: transform, filter, rotateY, width;
-            position: relative;
-        }
-        
-        .items .overlay {
-            position: absolute;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-            color: #fff;
-            width: 100%;
-            text-align: center;
-            padding: 0.5rem;
-            transition: background 0.3s ease;
-        }
-        
-        .text {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-        
-        .item::before,
-        .item::after {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 20px;
-            right: calc(var(--index) * -1);
-        }
-        
-        .item::after {
-            left: calc(var(--index) * -1);
-        }
-        
-        .items .item:hover {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 10));
-        }
-        
-        .items .item:hover + * {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
-            z-index: -1;
-        }
-        
-        .items .item:hover + * + * {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
-            z-index: -2;
-        }
-        
-        .items .item:hover + * + * + * {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
-            z-index: -3;
-        }
-        
-        .items .item:hover + * + * + * {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
-            z-index: -4;
-        }
-        
-        .items .item:has(+ :hover) {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
-        }
-        
-        .items .item:has(+ * + :hover) {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
-        }
-        
-        .items .item:has(+ * + * + :hover) {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
-        }
-        
-        .items .item:has(+ * + * + * + :hover) {
-            filter: inherit;
-            transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
-        }
-        
-        .items .item:active,
-        .items .item:focus {
-            width: 28vw;
-            filter: inherit;
-            z-index: 100;
-            transform: translateZ(calc(var(--index) * 10));
-            margin: 0 0.45vw;
-        }
-      
-
-      
-        
+}

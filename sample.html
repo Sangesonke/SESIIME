@@ -7,51 +7,7 @@
     <link rel="stylesheet" href="style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-    <script>
-        function validateForm() {
-            var bookingTime = document.getElementById('booking-time').value;
-            var currentTime = new Date(); // Get the current date and time
-            
-            // Set the current time as the start time
-            var startTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(),  currentTime.getHours(), currentTime.getMinutes());
-            
-            var endTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 17, 0); // 5:00 PM
-            
-            var parsedTime = new Date("2000-01-01T" + bookingTime); // Create a dummy date to parse time
-
-            if (parsedTime < startTime || parsedTime > endTime) {
-                alert('Hey now,Booking time must be between current time and 5:00 PM.');
-                return false;
-            }
-                return true;
-           
-
-        }
-
-        
-        document.getElementById("bookingForm").onsubmit = function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            var formData = new FormData(this);
-
-            fetch('submit_form.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert(data.message);
-                if (data.success) {
-                    window.location.href = 'sample.html'; // Redirect to your desired page
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred while submitting the form.');
-            });
-        };
-
-    </script>
+    
 </head>
 <body>
    
@@ -79,6 +35,7 @@
     </section>
     
     <section class="team" id="team">
+        
         <div class="team-title">MEET OUR BARBERS</div> 
         <div class="items">
             <div class="item" tabindex="0" style="background-image: url(barber5.jpeg );">
@@ -103,7 +60,7 @@
             </div>
             <div class="item" tabindex="0" style="background-image: url(barber1.jpeg);">
                 <div class="overlay">
-                    <div class="text">Simon</div>
+                    <div class="text">Addison</div>
                 </div>
             </div>
         </div>
@@ -114,7 +71,7 @@
     
         <div class="container">
             <h2 class="contact-title">Book Appointment</h2>
-            <form id="contact-form" action="Sesime.php" method="post" onsubmit="return validateForm()">
+            <form id="contact-form" action="Sesime.php" method="post" >
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -130,7 +87,7 @@
                         <option value="xhosa_man">Xhosa man</option>
                         <option value="dube">Dube</option>
                         <option value="Khapture">Khapture</option>
-                        <option value="Simon">Simon</option>
+                        <option value="Addison">Addison</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -140,7 +97,7 @@
                 </div>
                 <div class="form-group">
                     <label for="date">Date</label>
-                    <input type="date" id="date" name="date" required>
+                    <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" required>
                 </div>
                 <div class="form-group button-group">
                 <button class="sub" type="submit">Book</button>
@@ -151,11 +108,12 @@
     </section>
    
     <section id="about" class="about">
+
         <div class="img-overlay">
 
         
             <div class="about-container">
-                <img src="WEB ELEMENTS/section 2/slideshow image-8.png" alt="hairclip picture"> 
+                <img src="WEB ELEMENTS/section 2/image.png" alt="hairclip picture"> 
                 
                 <div class="overlay-text">
                     <h1> ABOUT SESIME</h1>
@@ -186,7 +144,7 @@
                 <!-- Social network links go here -->
                 <a href="https://www.facebook.com/sesiime/"><img src="WEB ELEMENTS/section 4/icons/fb icon-8.png"></a>
                 <a href="#"><img src="WEB ELEMENTS/section 4/icons/x icon-8.png"></a>
-                <a href="https://www.instagram.com/sesiime/"><img src="WEB ELEMENTS/section 4/icons/ig icon-8.png"></a>
+                <a href="https://www.instagram.com/mr_deecutz/"><img src="WEB ELEMENTS/section 4/icons/ig icon-8.png"></a>
               </div>
         </div>
     </footer>
