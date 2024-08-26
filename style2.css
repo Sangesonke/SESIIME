@@ -78,14 +78,14 @@ header {
 }
 
 header img {
-    width: 15vw; /* Scale image with viewport width */
+    width: 15vw;
     margin-right: auto;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
-    padding: 0.4vw 2vw; /* Use viewport width for padding */
+    padding: 0.4vw 2vw; 
     height: -10px;
     transition: transform 0.3s ease-in-out;
 }
@@ -102,7 +102,7 @@ nav a {
 
 .hero {
     background: url('WEB ELEMENTS/section 1/overlayed wall image-8.png') no-repeat center center/cover;
-    padding: 4vw 2vw; /* Use viewport units for padding */
+    padding: 4vw 2vw; 
     color: white;
     text-align: center;
     display: flex;
@@ -117,17 +117,17 @@ nav a {
 }
 
 .hero p {
-    font-size: 2.5vw; /* Scale paragraph with viewport width */
+    font-size: 2.5vw;
     margin-bottom: 4vw;
 }
 
 .hero .btn {
-    padding: 1.5vw 3vw; /* Scale button padding with viewport width */
+    padding: 1.5vw 3vw;
     font-size: 2vw;
     color: white;
     background-color: #ffd700;
     border: none;
-    border-radius: 0.5vw; /* Use viewport units for border-radius */
+    border-radius: 0.5vw; 
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -199,7 +199,7 @@ section {
     padding: 4vw;
     border-radius: 2vw;
     text-align: center;
-    width: 80%; /* Adjust width as needed */
+    width: 80%; 
 }
 
 .team-title, .items {
@@ -209,8 +209,8 @@ section {
 /*Booking form*/
 
 #booking + section {
-    margin-top: 0; /* Remove top margin of the next section */
-    padding-top: 0; /* Remove top padding of the next section */
+    margin-top: 0; 
+    padding-top: 0; 
 }
 
 .contact-title{
@@ -278,6 +278,11 @@ label[for="time"],label[for="date"]{
     outline: none;
 }
 
+.overlay-text h1 {
+    font-size: 2.6vw;
+    margin-bottom: 6px;
+}
+
 .button-group {
     position: sticky;
     display: flex;
@@ -289,8 +294,8 @@ button {
     background-color: #f5ab00;
     color: white;
     border: none;
-    border-radius: 10px; /* Switch from vw to px for a more consistent appearance */
-    font-size: 1.5em; /* Use em for font size to make it relative to the parent element */
+    border-radius: 10px; 
+    font-size: 1.5em; 
     cursor: pointer;
     transition: background-color 0.3s ease;
     
@@ -451,9 +456,9 @@ button:hover {
     }
 
     button {
-        font-size: 1.2em; /* Slightly smaller font size for mobile */
-        padding: 12px 18px; /* Adjust padding for smaller screens */
-        border-radius: 8px; /* Adjust border-radius for smaller screens */
+        font-size: 1.2em;
+        padding: 12px 18px;
+        border-radius: 8px;
     }
     .form-group input, .form-group select, .form-group textarea {
         padding: 10px;
@@ -464,7 +469,7 @@ button:hover {
     }
     .hero {
         background: url('WEB ELEMENTS/section 1/overlayed wall image-8.png') no-repeat center center;
-        padding: 4vw 2vw; /* Use viewport units for padding */
+        padding: 4vw 2vw;
         color: white;
         text-align: center;
         display: flex;
