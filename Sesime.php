@@ -25,7 +25,7 @@ function getClient() {
     $client = new Client();
     $client->setApplicationName('Google Sheets API PHP');
     $client->setScopes(Sheets::SPREADSHEETS);
-    $client->setAuthConfig('sesime-project-bbf33d5a53d1.json'); // Ensure this path is correct
+    $client->setAuthConfig('sesime-project-bbf33d5a53d1.json'); 
     $client->setAccessType('offline');
     return $client;
 }
@@ -135,14 +135,14 @@ function sendConfirmationEmail($to, $name, $date, $time, $barber) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
-    $email = $_POST['email']; // Add email field
+    $email = $_POST['email']; 
     $date = $_POST['date'];
     $time = $_POST['time'];
     $barber = $_POST['barber'];
 
     // Google Sheets setup
-    $spreadsheetId = '1WrTRcANa5yOKzT-jWWnVWB_6CiT7Xa4GPOO3TwRt6_c'; // Replace with your actual Google Sheets ID
-    $range = 'Bookings'; // Replace with your actual sheet name
+    $spreadsheetId = '1WrTRcANa5yOKzT-jWWnVWB_6CiT7Xa4GPOO3TwRt6_c'; 
+    $range = 'Bookings'; 
 
     $data = getSheetData($spreadsheetId, $range);
 
