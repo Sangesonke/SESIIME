@@ -121,7 +121,7 @@ function sendConfirmationEmail($to, $name, $date, $time, $barber) {
         <p>See you soon!</p>
         <p>The Sesime Barbershop Team</p>
     </body></html>");
-    $sendSmtpEmail->setSender(['name' => 'Sesime Barbershop', 'email' => 'sagemqayi@gmail.com']);
+    $sendSmtpEmail->setSender(['name' => 'Sesime Barbershop', 'email' => 'yorkd8827@gmail.com']);
     $sendSmtpEmail->setTo([['email' => $to, 'name' => $name]]);
     $sendSmtpEmail->setParams(['name' => $name, 'date' => $date, 'time' => $time, 'barber' => $barber]);
 
