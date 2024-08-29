@@ -179,7 +179,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     echo "<script>
             alert('$message');
-            window.location.href = 'sample.html'; // Redirect back to the html page
+            window.location.href = 'index.html'; // Redirect back to the html page
           </script>";
     exit(); // Prevent further execution after handling the form submission
 }
