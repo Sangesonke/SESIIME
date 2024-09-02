@@ -1,9 +1,17 @@
+# Exported from Render on 2024-09-02T16:23:17Z
 services:
-  - type: web
-    name: Sesiime
-    env: php
-    buildCommand: ""
-    startCommand: "php -S 0.0.0.0:10000 -t ."
-    envVars:
-      - key: ENVIRONMENT
-        value: production
+- type: web
+  name: SESIIME
+  runtime: python
+  repo: https://github.com/Sangesonke/SESIIME
+  plan: free
+  envVars:
+  - key: sesime-project-bbf33d5a53d1.json
+    sync: false
+  - key: API_KEY
+    sync: false
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn your_application.wsgi
+  rootDir: ./
+version: "1"
