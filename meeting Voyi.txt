@@ -1,0 +1,141 @@
+install netCLI using CLI
+
+First Steps...
+Start from first step in Nest documentation
+skip linting and formatting
+
+Controllers...
+Controllers, handling requests and reponses direct traffic.
+Go through request object.
+Read about decorators.
+Request decorator.
+Param decorator.
+Body param
+Query param
+Route Wildcard.
+Redirect controller.
+Asynchronity.
+DTO.
+Stop at library specific approach
+
+Providers.
+Dependency injection.
+Read all of it
+
+Modules...
+Read all the modules documentation.
+Module Re-exporting
+Global Modules.
+Dynamic Modules.
+
+Middleware...
+It serves as validation sometimes.
+Read through it 
+
+Exception Filters ...
+Read through it.
+
+Pipes...
+Read through it thoroughly
+TTO 
+Zod Schema
+Class Validator and class transformer
+Global scope pipes
+
+Guards...
+Security
+Role Based authentication.
+
+Interceptors...
+Guards use inteceptors.
+
+Custom Decorators...
+Read through it
+
+Fundamentals.....
+Custom Providers...
+Read through it.
+
+Asynchronous providers...
+Dynamic modules...
+
+Injection Scopess...
+Provider Scope
+
+Circular Dependency...
+Forward Reference
+Read through it
+
+Module Reference...
+Read all of it 
+
+Lazy load modules...
+
+Execution Context...
+
+LifeCycle Events..
+
+Platform agnostism...
+
+testing...
+
+
+TECHNIQUES....
+Configuration...
+Read through it
+
+Database... 
+TypeOrm uses mysq2
+Follow through 
+Read TypeOrm documentation
+Autoload entities
+Migrations**
+
+
+Mongo...
+
+Validation...
+
+Caching...
+
+Data Serilization...
+
+Version...
+
+Task Scheduling...
+
+Queues...
+BullMQue
+ReadThrough
+
+Cookies...
+Read Through
+
+Events...
+Read Through
+
+Compression...
+
+fILE Upload... ** Explain it after done.
+
+Streaming Files...
+
+HTTP modules...
+Axios package
+
+Session...
+
+Model View Controller...
+
+Performance Fastify...
+
+Sever-sent events...
+
+OPEN API...
+install swagger 
+
+
+
+
+
+

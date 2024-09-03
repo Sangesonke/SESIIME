@@ -109,7 +109,7 @@ function validate_time($time) {
 
 function sendConfirmationEmail($to, $name, $date, $time, $barber) {
     $apiKey =$_SERVER['API_KEY'] ?: 'API key not found.';  // Fetch the API key from the .env file
-    $config = Configuration::getDefaultConfiguration()->setApiKey($apiKey);
+    $config = Configuration::getDefaultConfiguration()->setApiKey('api-key',$apiKey);
     $api_instance = new TransactionalEmailsApi(new GuzzleHttp\Client(), $config);
 
     $sendSmtpEmail = new SendSmtpEmail();
@@ -121,7 +121,7 @@ function sendConfirmationEmail($to, $name, $date, $time, $barber) {
         <p>See you soon!</p>
         <p>The Sesime Barbershop Team</p>
     </body></html>");
-    $sendSmtpEmail->setSender(['name' => 'Sesime Barbershop', 'email' => 'yorkd8827@gmail.com']);
+    $sendSmtpEmail->setSender(['name' => 'Sesime Barbershop', 'email' => 'sagemqayi@gmail.com']);
     $sendSmtpEmail->setTo([['email' => $to, 'name' => $name]]);
     $sendSmtpEmail->setParams(['name' => $name, 'date' => $date, 'time' => $time, 'barber' => $barber]);
 

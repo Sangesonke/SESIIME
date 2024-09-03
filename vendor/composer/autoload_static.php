@@ -13,6 +13,10 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '1f87db08236948d07391152dccb70f04' => __DIR__ . '/..' . '/google/apiclient-services/autoload.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
+        '79f66bc0a1900f77abe4a9a299057a0a' => __DIR__ . '/..' . '/starkbank/ecdsa/src/ellipticcurve.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
     );
 
@@ -26,6 +30,18 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
             'ZipStream\\' => 10,
             'Zandile\\Sesime\\' => 15,
         ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'SendGrid\\Stats\\' => 15,
+            'SendGrid\\Mail\\' => 14,
+            'SendGrid\\Helper\\' => 16,
+            'SendGrid\\EventWebhook\\' => 22,
+            'SendGrid\\Contacts\\' => 18,
+            'SendGrid\\' => 9,
+        ),
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
@@ -33,6 +49,7 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
             'Psr\\Cache\\' => 10,
+            'PhpOption\\' => 10,
             'PhpOffice\\PhpSpreadsheet\\' => 25,
             'ParagonIE\\ConstantTime\\' => 23,
         ),
@@ -46,6 +63,7 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'GrahamCampbell\\ResultType\\' => 26,
             'Google\\Service\\' => 15,
             'Google\\Auth\\' => 12,
             'Google\\' => 7,
@@ -54,9 +72,17 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
         array (
             'Firebase\\JWT\\' => 13,
         ),
+        'D' => 
+        array (
+            'Dotenv\\' => 7,
+        ),
         'C' => 
         array (
             'Complex\\' => 8,
+        ),
+        'B' => 
+        array (
+            'Brevo\\Client\\' => 13,
         ),
     );
 
@@ -72,6 +98,42 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
         'Zandile\\Sesime\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Symfony\\Polyfill\\Php80\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'SendGrid\\Stats\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/stats',
+        ),
+        'SendGrid\\Mail\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/mail',
+        ),
+        'SendGrid\\Helper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/helper',
+        ),
+        'SendGrid\\EventWebhook\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/eventwebhook',
+        ),
+        'SendGrid\\Contacts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/contacts',
+        ),
+        'SendGrid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/php-http-client/lib',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -93,6 +155,10 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'PhpOption\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
         'PhpOffice\\PhpSpreadsheet\\' => 
         array (
@@ -122,6 +188,10 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'GrahamCampbell\\ResultType\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
         'Google\\Service\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/apiclient-services/src',
@@ -138,9 +208,17 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
         'Complex\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
+        ),
+        'Brevo\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/getbrevo/brevo-php/lib',
         ),
     );
 
@@ -155,6 +233,8 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'BaseSendGridClientInterface' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Google_AccessToken_Revoke' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
         'Google_AccessToken_Verify' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
@@ -176,6 +256,12 @@ class ComposerStaticInitb4c482e64e3be1ffbdfd6dc85630eda8
         'Google_Task_Retryable' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
         'Google_Task_Runner' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
         'Google_Utils_UriTemplate' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
+        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'SendGrid' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/SendGrid.php',
+        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'TwilioEmail' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/TwilioEmail.php',
+        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
