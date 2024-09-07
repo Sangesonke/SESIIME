@@ -54,6 +54,10 @@ class GoogleCloudSecuritycenterV2Finding extends \Google\Collection
    * @var string
    */
   public $createTime;
+  protected $dataAccessEventsType = GoogleCloudSecuritycenterV2DataAccessEvent::class;
+  protected $dataAccessEventsDataType = 'array';
+  protected $dataFlowEventsType = GoogleCloudSecuritycenterV2DataFlowEvent::class;
+  protected $dataFlowEventsDataType = 'array';
   protected $databaseType = GoogleCloudSecuritycenterV2Database::class;
   protected $databaseDataType = '';
   /**
@@ -102,6 +106,8 @@ class GoogleCloudSecuritycenterV2Finding extends \Google\Collection
    * @var string
    */
   public $mute;
+  protected $muteInfoType = GoogleCloudSecuritycenterV2MuteInfo::class;
+  protected $muteInfoDataType = '';
   /**
    * @var string
    */
@@ -354,6 +360,34 @@ class GoogleCloudSecuritycenterV2Finding extends \Google\Collection
     return $this->createTime;
   }
   /**
+   * @param GoogleCloudSecuritycenterV2DataAccessEvent[]
+   */
+  public function setDataAccessEvents($dataAccessEvents)
+  {
+    $this->dataAccessEvents = $dataAccessEvents;
+  }
+  /**
+   * @return GoogleCloudSecuritycenterV2DataAccessEvent[]
+   */
+  public function getDataAccessEvents()
+  {
+    return $this->dataAccessEvents;
+  }
+  /**
+   * @param GoogleCloudSecuritycenterV2DataFlowEvent[]
+   */
+  public function setDataFlowEvents($dataFlowEvents)
+  {
+    $this->dataFlowEvents = $dataFlowEvents;
+  }
+  /**
+   * @return GoogleCloudSecuritycenterV2DataFlowEvent[]
+   */
+  public function getDataFlowEvents()
+  {
+    return $this->dataFlowEvents;
+  }
+  /**
    * @param GoogleCloudSecuritycenterV2Database
    */
   public function setDatabase(GoogleCloudSecuritycenterV2Database $database)
@@ -604,6 +638,20 @@ class GoogleCloudSecuritycenterV2Finding extends \Google\Collection
   public function getMute()
   {
     return $this->mute;
+  }
+  /**
+   * @param GoogleCloudSecuritycenterV2MuteInfo
+   */
+  public function setMuteInfo(GoogleCloudSecuritycenterV2MuteInfo $muteInfo)
+  {
+    $this->muteInfo = $muteInfo;
+  }
+  /**
+   * @return GoogleCloudSecuritycenterV2MuteInfo
+   */
+  public function getMuteInfo()
+  {
+    return $this->muteInfo;
   }
   /**
    * @param string

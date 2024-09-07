@@ -54,6 +54,10 @@ class Finding extends \Google\Collection
    * @var string
    */
   public $createTime;
+  protected $dataAccessEventsType = DataAccessEvent::class;
+  protected $dataAccessEventsDataType = 'array';
+  protected $dataFlowEventsType = DataFlowEvent::class;
+  protected $dataFlowEventsDataType = 'array';
   protected $databaseType = Database::class;
   protected $databaseDataType = '';
   /**
@@ -102,6 +106,8 @@ class Finding extends \Google\Collection
    * @var string
    */
   public $mute;
+  protected $muteInfoType = MuteInfo::class;
+  protected $muteInfoDataType = '';
   /**
    * @var string
    */
@@ -354,6 +360,34 @@ class Finding extends \Google\Collection
     return $this->createTime;
   }
   /**
+   * @param DataAccessEvent[]
+   */
+  public function setDataAccessEvents($dataAccessEvents)
+  {
+    $this->dataAccessEvents = $dataAccessEvents;
+  }
+  /**
+   * @return DataAccessEvent[]
+   */
+  public function getDataAccessEvents()
+  {
+    return $this->dataAccessEvents;
+  }
+  /**
+   * @param DataFlowEvent[]
+   */
+  public function setDataFlowEvents($dataFlowEvents)
+  {
+    $this->dataFlowEvents = $dataFlowEvents;
+  }
+  /**
+   * @return DataFlowEvent[]
+   */
+  public function getDataFlowEvents()
+  {
+    return $this->dataFlowEvents;
+  }
+  /**
    * @param Database
    */
   public function setDatabase(Database $database)
@@ -604,6 +638,20 @@ class Finding extends \Google\Collection
   public function getMute()
   {
     return $this->mute;
+  }
+  /**
+   * @param MuteInfo
+   */
+  public function setMuteInfo(MuteInfo $muteInfo)
+  {
+    $this->muteInfo = $muteInfo;
+  }
+  /**
+   * @return MuteInfo
+   */
+  public function getMuteInfo()
+  {
+    return $this->muteInfo;
   }
   /**
    * @param string

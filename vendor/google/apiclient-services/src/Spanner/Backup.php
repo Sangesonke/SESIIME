@@ -21,6 +21,10 @@ class Backup extends \Google\Collection
 {
   protected $collection_key = 'referencingDatabases';
   /**
+   * @var string[]
+   */
+  public $backupSchedules;
+  /**
    * @var string
    */
   public $createTime;
@@ -39,7 +43,19 @@ class Backup extends \Google\Collection
   /**
    * @var string
    */
+  public $exclusiveSizeBytes;
+  /**
+   * @var string
+   */
   public $expireTime;
+  /**
+   * @var string
+   */
+  public $freeableSizeBytes;
+  /**
+   * @var string
+   */
+  public $incrementalBackupChainId;
   /**
    * @var string
    */
@@ -48,6 +64,10 @@ class Backup extends \Google\Collection
    * @var string
    */
   public $name;
+  /**
+   * @var string
+   */
+  public $oldestVersionTime;
   /**
    * @var string[]
    */
@@ -69,6 +89,20 @@ class Backup extends \Google\Collection
    */
   public $versionTime;
 
+  /**
+   * @param string[]
+   */
+  public function setBackupSchedules($backupSchedules)
+  {
+    $this->backupSchedules = $backupSchedules;
+  }
+  /**
+   * @return string[]
+   */
+  public function getBackupSchedules()
+  {
+    return $this->backupSchedules;
+  }
   /**
    * @param string
    */
@@ -142,6 +176,20 @@ class Backup extends \Google\Collection
   /**
    * @param string
    */
+  public function setExclusiveSizeBytes($exclusiveSizeBytes)
+  {
+    $this->exclusiveSizeBytes = $exclusiveSizeBytes;
+  }
+  /**
+   * @return string
+   */
+  public function getExclusiveSizeBytes()
+  {
+    return $this->exclusiveSizeBytes;
+  }
+  /**
+   * @param string
+   */
   public function setExpireTime($expireTime)
   {
     $this->expireTime = $expireTime;
@@ -152,6 +200,34 @@ class Backup extends \Google\Collection
   public function getExpireTime()
   {
     return $this->expireTime;
+  }
+  /**
+   * @param string
+   */
+  public function setFreeableSizeBytes($freeableSizeBytes)
+  {
+    $this->freeableSizeBytes = $freeableSizeBytes;
+  }
+  /**
+   * @return string
+   */
+  public function getFreeableSizeBytes()
+  {
+    return $this->freeableSizeBytes;
+  }
+  /**
+   * @param string
+   */
+  public function setIncrementalBackupChainId($incrementalBackupChainId)
+  {
+    $this->incrementalBackupChainId = $incrementalBackupChainId;
+  }
+  /**
+   * @return string
+   */
+  public function getIncrementalBackupChainId()
+  {
+    return $this->incrementalBackupChainId;
   }
   /**
    * @param string
@@ -180,6 +256,20 @@ class Backup extends \Google\Collection
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param string
+   */
+  public function setOldestVersionTime($oldestVersionTime)
+  {
+    $this->oldestVersionTime = $oldestVersionTime;
+  }
+  /**
+   * @return string
+   */
+  public function getOldestVersionTime()
+  {
+    return $this->oldestVersionTime;
   }
   /**
    * @param string[]
