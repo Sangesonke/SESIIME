@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/diwrhl18hcfw/public_html/sesiime.com
+    - mkdir -p $DEPLOYPATH
+    - rsync -av --progress ./ $DEPLOYPATH --exclude='.git' --exclude='cpanel.yml'
